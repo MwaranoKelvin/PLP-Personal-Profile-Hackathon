@@ -21,12 +21,32 @@
 
     <!--Internal CSS-->
     <link rel="stylesheet" href="styles.css" />
+
     <!--External CSS-->
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Savate:ital,wght@0,200..900;1,200..900&display=swap"
         rel="stylesheet">
+
+    <style>
+        .profile-circle {
+            width: 300px;
+
+            height: 300px;
+            border-radius: 50%;
+            overflow: hidden;
+            display: inline-block;
+
+        }
+
+        .profile-circle img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+
+        }
+    </style>
 </head>
 
 <body>
@@ -59,7 +79,7 @@
                         public speaking, or design, I enjoy using my skills to grow, connect with others, and make a
                         difference.</p>
                     <div class="my-buttons">
-                        <a href="#" class="cta-button">Download CV</a>
+                        <a href="C:\Users\USER\Downloads\kelvinResume.pdf" class="cta-button">Download CV</a>
                         <div class="social-links">
                             <a href="#" class="social-link">🌐</a>
                             <a href="#" class="social-link">💼</a>
@@ -163,8 +183,15 @@
                             advanced programming techniques. Active participant in coding bootcamps and tech workshops.
                         </p>
                     </div>
+                    <div class="education-item">
+                        <h3>High School Certification</h3>
+                        <div class="year">2019 - 2023</div>
+                        <p>I attended Kianyaga Hight School where I got a mean grade of A(minus).
+                        </p>
+                    </div>
+
                     <div class="cv-download">
-                        <a href="#" class="download-btn">Download My CV</a>
+                        <a href="C:\Users\USER\Downloads\kelvinResume.pdf" class="download-btn">Download My CV</a>
                     </div>
                 </div>
             </div>
@@ -230,7 +257,8 @@
                             <p>A command-line calculator crafted in Python, designed to perform fundamental arithmetic
                                 operations.
                             </p>
-                            <a href="#" class="project-link">View Project</a>
+                            <a href="https://github.com/MwaranoKelvin/PLP-week1_Python_Assigment/blob/main/CALCULATOR.PY"
+                                class="project-link">View Project</a>
                         </div>
                     </div>
 
@@ -278,12 +306,13 @@
                         <div class="form-group">
                             <label for="subject">Subject: </label>
                             <input type="text" id="subject" name="subject" required>
-                            
+
                         </div>
 
                         <div class="form-group">
                             <label for="message">Message: </label>
-                            <textarea name="message" id="message" placeholder = "Tell me about your project ot just say Hello!" required></textarea>
+                            <textarea name="message" id="message"
+                                placeholder="Tell me about your project ot just say Hello!" required></textarea>
                         </div>
                         <button type="submit" class="submit-btn">Send Message</button>
                     </form>
