@@ -1,0 +1,131 @@
+ *{
+    font-family: 'roboto', 'sans-serif';
+    color: white;
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: #222;
+    
+}
+/*navbar styling*/
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blue(4px);
+    background-color: rgba(34, 34, 34, 0.25 );
+    border-bottom: 1px solid #333;
+}
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+    padding-top: 1rem;
+}
+.nav-left {
+    display: flex;
+}
+.logo {
+    border-radius: 50%;
+    margin: 0 1rem;
+}
+.nav-name {
+    font-size: 20px;
+    line-height: 1.5rem;
+    letter-spacing: 0.2rem;
+}
+.nav-right {
+    margin-left: auto;
+}
+.nav-items-container {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.nav-items {
+    margin: 1rem;
+    list-style-type: none;
+}
+.nav-items-link {
+    text-decoration: none;
+}
+
+.nav-items-link:hover {
+    color: #3b82fc;
+    text-decoration: underline;
+} 
+
+/* Hero Container*/
+.hero-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+}
+
+.hero-image {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    border-radius: 10%;
+   
+}
+
+.hero-left, 
+.hero-right {
+    width: 100%;
+}
+
+.title {
+    font-size: 3rem;
+     text-align : center;
+     font-weight: 400;
+}
+
+.hero-container .title {
+    text-align: left;
+    padding-left: 1rem;
+
+}
+.description {
+    padding: 0 rem;
+    font-size: 1rem;
+    line-height: 2rem;
+    text-align: justify;
+}
+/*Resume Section*/
+    .resume-container {
+        padding: 6.5rem 1rem 0 1rem;
+        min-height: 100vh;
+
+    }
+    .resume-sub-container {
+        display: grid;
+        align-items: center;
+    }
+
+    .subtile {
+        font-size: 1.25rem;
+        line-height: 1.6rem;
+        margin-bottom: 0;
+    }
+    .line {
+        background-color: #333;
+        width: 100px;
+        height: 2px;
+        margin: 0.25rem 0 2rem 0;
+    } 
+    .inner-line {
+        background-color: rgb(59, 130, 246);
+        width: 30px;
+        height: 2px;
+    }
+    .resume-list {
+        display: block;
+        margin: 0 auto;
+    }
