@@ -125,7 +125,30 @@ body {
         width: 30px;
         height: 2px;
     }
-    .resume-list {
+    .resume-image {
         display: block;
         margin: 0 auto;
+    }
+    .resume-list {
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(2, min-max(0, 1fr));
+        grid: 1.25rem;
+        padding-left: 1px solid #333;
+
+    }
+    .resume-duration-container {
+        display: flex;
+        align-items: center;
+        padding-left: 2rem;
+
+    }
+    .round-div {
+        height: 24px;
+        width: 24px;
+        background-color: #222;
+        border: 1px solid #222;
+        border-radius: 50%;
+        position: absolute;
+        left: -12.5px;
     }
