@@ -1,3 +1,71 @@
+
+/*For it to be viewable in all devices in a great way, i will first style the Responsive Design*/
+@media (max-width: 768px) {
+    .nav.links {
+        display: none;
+    }
+    .my-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+   .my-container h1 {
+        font-size: 2.5rem;
+
+    }
+    .my-subtitle {
+        font-size: 1.2rem;
+    }
+    .profile-circle {
+        width: 300px;
+        height: 300px;
+    }
+    .profile-image {
+        width: 220px;
+        height: 220px;
+        font-size: 3rem;
+    }
+    .about-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .section-title {
+        font-size: 2rem;
+    }
+    .skills-grid, .interests-grid, .project-grid {
+        grid-template-columns: 1fr;
+    }
+    .contact-form {
+        padding: 2rem;
+    }
+    .section {
+        padding: 3rem 0;
+    }
+}
+ 
+@media (max-width: 480px) {
+    .container {
+        padding: 0 1rem;
+    }
+    .nav-container {
+        padding: 0 1rem;
+    }
+    .my-content h1 {
+        font-size: 2rem;
+    }
+    .section-title {
+        font-size: 1.8rem;
+    }
+    .my-buttons {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .social-links {
+        justify-content: flex-start;
+    }
+}
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -462,7 +530,17 @@ main {
     font-size: 2rem;
 
 }
+
 .project-content {
+    padding: 2rem;
+}
+
+.project-content h3 {
+    color: var(--text-white);
+    margin-bottom: 1rem;
+}
+
+.project-content p {
     color:var(--text-gray);
     margin-bottom: 1.5rem;
 
@@ -499,3 +577,70 @@ main {
     border-radius: 15px;
     border: 1px solid var(--border-color);
 }
+.form-group {
+    margin-bottom: 2rem;
+
+}
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--text-white);
+    font-weight: bold;
+}
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 15px;
+    background: var(--dark-bg);
+    border: 2px solid var(--border-color);
+    border-radius: 10px;
+    font-size: 1rem;
+    color: var(--text-white);
+    transition: border-color 0.3s ease;
+
+}
+
+.form-group input:focus, 
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary-green);
+}
+.form-group textarea {
+    height: 120px;
+    resize: vertical;
+}
+.submit-btn {
+    width: 100%;
+    padding: 15px;
+    background: var(--primary-green);
+    color: var(--dark-bg);
+    border: none;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.submit-btn:hover {
+    background: var(--secondary-green);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(0, 255, 136, 0.3);
+}
+
+/*Footer Section*/
+
+footer {
+    background: var(--darker-bg);
+    color: var(--text-gray);
+    text-align: center;
+    padding: 3rem 0;
+    border-top: 1px solid var(--border-color);
+}
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+.footer-content p {
+    font-size: 1rem;
+}
+
