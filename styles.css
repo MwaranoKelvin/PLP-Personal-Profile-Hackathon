@@ -315,7 +315,7 @@ main {
     align-items: center;
 }
 
-.profile-cicle {
+.profile-circle {
     width: 400px;
     height: 400px;
     border: 3px solid var(--primary-green);
